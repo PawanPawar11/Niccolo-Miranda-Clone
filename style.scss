@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+@font-face {
+    font-family: EditorialNew;
+    src: url(./fonts/EditorialNew-Light.ttf);
+}
+
+@font-face {
+    font-family: Canopee;
+    src: url(./fonts/Canopee.ttf);
+}
+
+@font-face {
+    font-family: DomaineDispCond;
+    src: url(./fonts/DomaineDispCondMedium.ttf);
+}
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page1 {
+    width: 100vw;
+    height: 100vh;
+    background-color: #c3bcb2;
+    position: relative;
+
+    .nav {
+        width: 100%;
+        height: 100px;
+        padding: 2rem;
+        @include flex;
+        border-bottom: 1px solid #87827B;
+
+        img {
+            width: 30%;
+            height: 1.5rem;
+        }
+
+        h5 {
+            font-size: 0.8rem;
+            font-weight: 100;
+            width: 30%;
+            font-family: EditorialNew;
+        }
+
+        i {
+           font-size: 1.5rem;
+           width: 30%;
+           text-align: right;
+        }
+    }
+}
+
+.elems {
+    // background-color: red;
+    height: 60vh;
+    padding: 40px 60px;
+    @include flex;
+}
+
+.elem1 {
+    width: 30%;
+    height: 100%;
+    // background-color: blue;
+
+    .image-div {
+        width: 100%;
+        height: 60%;
+        overflow: hidden;
+        border: 1.5px solid #444;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all ease 0.5s;
+        }
+
+        &:hover img {
+            scale: 1.1;
+        }
+    }
+    
+    h4 {
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.8rem;
+        font-weight: 100;
+        font-family: Canopee;
+        color: #1C1C1A;
+
+        span {
+            background-color: #B83C12;
+            color: #C4BAAF;
+            font-family: Canopee;
+            font-weight: 100;
+            font-size: 1.5rem;
+            border-radius: 4px;
+            padding: 2px 4px;
+            display: inline-block;
+            margin-top: 0px;
+            margin-left: 3px;
+        }
+    }
+
+    p {
+        font-family: EditorialNew;
+        color: #3F3E3B;
+    }
+}
+
+.elem2 {
+    // background-color: blue;
+    width: 30%;
+    height: 100%;
+    border-left: 1px solid #87827B;
+    border-right: 1px solid #87827B;
+    padding: 20px 60px;
+    text-align: center;
+
+    h2 {
+        font-size: 4rem;
+        font-weight: 100;
+        font-family: Canopee;
+        text-transform: uppercase;
+        color: #222;
+    }
+
+    h3 {
+        font-size: 2.1rem;
+        font-weight: 100;
+        font-family: EditorialNew;
+        margin-top: 10px;
+        color: #222;
+    }
+
+    h6 {
+        font-size: 1.2rem;
+        font-weight: 100;
+        font-family: EditorialNew;
+        margin-top: 20px;
+        color: #3F3E3B;
+
+        span {
+            font-family: Canopee;
+            color: #222;
+        }
+    }
+}
+
+.elem3 {
+    width: 30%;
+    height: 100%;
+    // background-color: blue;
+
+    .image-div {
+        width: 100%;
+        height: 60%;
+        overflow: hidden;
+        border: 1.5px solid #444;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all ease 0.5s;
+        }
+
+        &:hover img {
+            scale: 1.1;
+        }
+    }
+
+        h4 {
+            font-size: 1.5rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.8rem;
+            font-weight: 100;
+            font-family: Canopee;
+            color: #1C1C1A;
+    
+            span {
+                background-color: #B83C12;
+                color: #C4BAAF;
+                font-family: Canopee;
+                font-weight: 100;
+                font-size: 1.5rem;
+                border-radius: 4px;
+                padding: 2px 4px;
+                display: inline-block;
+                margin-top: 0px;
+                margin-left: 3px;
+            }
+        }
+    
+        p {
+            font-family: EditorialNew;
+            color: #3F3E3B;
+        }
+}
