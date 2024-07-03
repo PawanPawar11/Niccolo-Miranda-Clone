@@ -11,6 +11,11 @@ body {
   width: 100%;
 }
 
+.main {
+  background-color: #1D1D1B;
+  overflow-x: hidden;
+}
+
 @font-face {
   font-family: EditorialNew;
   src: url(./fonts/EditorialNew-Light.ttf);
@@ -24,11 +29,11 @@ body {
   src: url(./fonts/DomaineDispCondMedium.ttf);
 }
 .page1 {
-  min-height: 100vw;
-  height: 100vh;
+  width: 100vw;
+  height: 150vh;
   background-color: #c3bcb2;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .page1 .nav {
   width: 100%;
@@ -197,4 +202,67 @@ body {
 .elem3 p {
   font-family: EditorialNew;
   color: #3F3E3B;
+}
+
+.page2 {
+  width: 100%;
+  height: 145vh;
+  background-color: #C2BBB2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+}
+
+.page2-left {
+  width: 35%;
+  height: 100%;
+  padding-right: 3rem;
+  border-right: 1px solid #555;
+  color: #1C1C1A;
+}
+.page2-left h2 {
+  font-size: 7.7rem;
+  font-family: Canopee;
+  line-height: 140px;
+  font-weight: 500;
+  letter-spacing: -10px;
+}
+.page2-left h2 span {
+  font-size: 13rem;
+  font-family: Canopee;
+}
+.page2-left img {
+  height: 40%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid #000;
+}
+.page2-left p {
+  font-size: 2rem;
+  font-family: EditorialNew;
+  margin-top: 2rem;
+}
+
+.page2-right {
+  width: 65%;
+  height: 100%;
+  padding: 0 3rem;
+  color: #1C1C1A;
+}
+.page2-right img {
+  height: 42%;
+  width: 106%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid #000;
+}
+.page2-right h1 {
+  font-size: 6.9rem;
+  font-family: Canopee;
+  font-weight: 100;
+  line-height: 6rem;
+  letter-spacing: -3px;
+  margin-top: 3rem;
 }/*# sourceMappingURL=style.css.map */
