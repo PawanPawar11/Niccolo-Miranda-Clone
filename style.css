@@ -439,4 +439,53 @@ body {
   height: 8vh;
   transform: translateX(-120%);
   transition: all ease 0.6s;
+}
+
+.page5 {
+  width: 100%;
+  padding: 25px 0;
+  background-color: #C6BEB5;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.page5 h1 {
+  font-size: 5rem;
+  font-family: EditorialNew;
+  font-weight: 100;
+  display: inline-block;
+  margin-right: 30px;
+  animation-name: scroll;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.page5 h1 span {
+  font-family: Canopee;
+  padding: 0 1rem;
+  background-color: #1C1C19;
+  color: #C2BBB2;
+}
+.page5::-webkit-scrollbar {
+  display: none;
+}
+
+.page6 {
+  height: 100px;
+  width: 100%;
+  background-color: #C3BCB2;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(calc(-100% - 34px));
+  }
+}
+.page5:hover h1 {
+  animation-play-state: paused;
 }/*# sourceMappingURL=style.css.map */

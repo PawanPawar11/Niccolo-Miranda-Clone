@@ -324,130 +324,6 @@ body {
     }
 }
 
-// .page4 {
-//     width: 100vw;
-//     height: 200vh;
-//     background-color: red;
-// }
-
-// .page4-left {
-//     width: 70%;
-//     height: 100%;
-//     background-color: blueviolet;
-//     padding: 0 2rem;
-
-//     img {
-//         height: 55%;
-//         width: 100%;
-//         object-fit: cover;
-//         border: 1px solid #000;
-//     }
-
-//     .elems {
-//         // background-color: red;
-//         height: 60vh;
-//         padding: 40px 60px;
-//         @include flex;
-//     }
-
-//     .elem1 {
-//         width: 30%;
-//         height: 100%;
-//         // background-color: blue;
-
-//         .image-div {
-//             width: 100%;
-//             height: 60%;
-//             overflow: hidden;
-//             border: 1.5px solid #444;
-
-//             img {
-//                 width: 100%;
-//                 height: 100%;
-//                 object-fit: cover;
-//                 transition: all ease 0.5s;
-//             }
-
-//             &:hover img {
-//                 scale: 1.1;
-//             }
-//         }
-
-//         h4 {
-//             font-size: 1.5rem;
-//             margin-top: 0.5rem;
-//             margin-bottom: 0.8rem;
-//             font-weight: 100;
-//             font-family: Canopee;
-//             color: #1C1C1A;
-
-//             span {
-//                 background-color: #B83C12;
-//                 color: #C4BAAF;
-//                 font-family: Canopee;
-//                 font-weight: 100;
-//                 font-size: 1.5rem;
-//                 border-radius: 4px;
-//                 padding: 2px 4px;
-//                 display: inline-block;
-//                 margin-top: 0px;
-//                 margin-left: 3px;
-//             }
-//         }
-
-//         p {
-//             font-family: EditorialNew;
-//             color: #3F3E3B;
-//         }
-//     }
-
-//     .elem2 {
-//         // background-color: blue;
-//         width: 30%;
-//         height: 100%;
-//         border-left: 1px solid #87827B;
-//         // border-right: 1px solid #87827B;
-//         padding: 20px 60px;
-//         text-align: center;
-
-//         h2 {
-//             font-size: 4rem;
-//             font-weight: 100;
-//             font-family: Canopee;
-//             text-transform: uppercase;
-//             color: #222;
-//         }
-
-//         h3 {
-//             font-size: 2.1rem;
-//             font-weight: 100;
-//             font-family: EditorialNew;
-//             margin-top: 10px;
-//             color: #222;
-//         }
-
-//         h6 {
-//             font-size: 1.2rem;
-//             font-weight: 100;
-//             font-family: EditorialNew;
-//             margin-top: 20px;
-//             color: #3F3E3B;
-
-//             span {
-//                 font-family: Canopee;
-//                 color: #222;
-//             }
-//         }
-//     }
-
-// }
-
-// .page-right {
-//     width: 30%;
-//     height: 100%;
-//     background-color: #25a0cc;
-// }
-
 .page4 {
     // background-color: red;
     background-color: #BFB7AE;
@@ -627,4 +503,59 @@ body {
             transition: all ease 0.6s;
         }
     }
+}
+
+.page5 {
+    width: 100%;
+    padding: 25px 0;
+    background-color: #C6BEB5;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+
+    h1 {
+        font-size: 5rem;
+        font-family: EditorialNew;
+        font-weight: 100;
+        display: inline-block;
+        // background-color: aquamarine;
+        margin-right: 30px;
+        animation-name: scroll;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+
+        span {
+            font-family: Canopee;
+            padding: 0 1rem;
+            background-color: #1C1C19;
+            color: #C2BBB2;
+        }
+    }
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.page6 {
+    height: 100px;
+    width: 100%;
+    background-color: #C3BCB2;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(calc(-100% - 34px));
+    }
+}
+
+.page5:hover h1 {
+    animation-play-state: paused;
 }
