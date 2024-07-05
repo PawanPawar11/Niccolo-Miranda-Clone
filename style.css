@@ -71,36 +71,34 @@ body {
   color: #C3BCB3;
   padding: 1rem;
 }
-
-.elems {
+.page1 .elems {
   height: 60vh;
   padding: 40px 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
-.elem1 {
+.page1 .elem1 {
   width: 30%;
   height: 100%;
 }
-.elem1 .image-div {
+.page1 .elem1 .image-div {
   width: 100%;
   height: 60%;
   overflow: hidden;
   border: 1.5px solid #444;
 }
-.elem1 .image-div img {
+.page1 .elem1 .image-div img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   transition: all ease 0.5s;
 }
-.elem1 .image-div:hover img {
+.page1 .elem1 .image-div:hover img {
   scale: 1.1;
 }
-.elem1 h4 {
+.page1 .elem1 h4 {
   font-size: 1.5rem;
   margin-top: 0.5rem;
   margin-bottom: 0.8rem;
@@ -108,7 +106,7 @@ body {
   font-family: Canopee;
   color: #1C1C1A;
 }
-.elem1 h4 span {
+.page1 .elem1 h4 span {
   background-color: #B83C12;
   color: #C4BAAF;
   font-family: Canopee;
@@ -120,12 +118,11 @@ body {
   margin-top: 0px;
   margin-left: 3px;
 }
-.elem1 p {
+.page1 .elem1 p {
   font-family: EditorialNew;
   color: #3F3E3B;
 }
-
-.elem2 {
+.page1 .elem2 {
   width: 30%;
   height: 100%;
   border-left: 1px solid #87827B;
@@ -133,53 +130,52 @@ body {
   padding: 20px 60px;
   text-align: center;
 }
-.elem2 h2 {
+.page1 .elem2 h2 {
   font-size: 4rem;
   font-weight: 100;
   font-family: Canopee;
   text-transform: uppercase;
   color: #222;
 }
-.elem2 h3 {
+.page1 .elem2 h3 {
   font-size: 2.1rem;
   font-weight: 100;
   font-family: EditorialNew;
   margin-top: 10px;
   color: #222;
 }
-.elem2 h6 {
+.page1 .elem2 h6 {
   font-size: 1.2rem;
   font-weight: 100;
   font-family: EditorialNew;
   margin-top: 20px;
   color: #3F3E3B;
 }
-.elem2 h6 span {
+.page1 .elem2 h6 span {
   font-family: Canopee;
   color: #222;
 }
-
-.elem3 {
+.page1 .elem3 {
   width: 30%;
   height: 100%;
 }
-.elem3 .image-div {
+.page1 .elem3 .image-div {
   width: 100%;
   height: 60%;
   overflow: hidden;
   border: 1.5px solid #444;
 }
-.elem3 .image-div img {
+.page1 .elem3 .image-div img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   transition: all ease 0.5s;
 }
-.elem3 .image-div:hover img {
+.page1 .elem3 .image-div:hover img {
   scale: 1.1;
 }
-.elem3 h4 {
+.page1 .elem3 h4 {
   font-size: 1.5rem;
   margin-top: 0.5rem;
   margin-bottom: 0.8rem;
@@ -187,7 +183,7 @@ body {
   font-family: Canopee;
   color: #1C1C1A;
 }
-.elem3 h4 span {
+.page1 .elem3 h4 span {
   background-color: #B83C12;
   color: #C4BAAF;
   font-family: Canopee;
@@ -199,7 +195,7 @@ body {
   margin-top: 0px;
   margin-left: 3px;
 }
-.elem3 p {
+.page1 .elem3 p {
   font-family: EditorialNew;
   color: #3F3E3B;
 }
@@ -291,4 +287,156 @@ body {
   height: 56vh;
   padding: 0 0 0;
   left: 1rem;
+}
+
+.page4 {
+  background-color: #BFB7AE;
+  width: 100%;
+  height: 150vh;
+  color: rgb(29, 29, 27);
+  padding: 2rem;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.page4-left {
+  width: 65%;
+  border-right: 1px solid #333;
+}
+.page4-left .elements {
+  height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.page4-left .elements .elements-left {
+  width: 45%;
+  height: 100%;
+  border-right: 1px solid #333;
+}
+.page4-left .elements .elements-left h2 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 66px;
+  font-family: Canopee;
+}
+.page4-left .elements .elements-left h3 {
+  font-size: 38px;
+  font-weight: 300;
+  line-height: 44px;
+  font-family: EditorialNew;
+  margin-top: 1rem;
+}
+.page4-left .elements .elements-left h5 {
+  font-family: 18px;
+  font-weight: 300;
+  line-height: 22px;
+  margin-top: 2rem;
+}
+.page4-left .elements .elements-left h5 span {
+  font-family: Canopee;
+}
+.page4-left .elements .elements-right {
+  width: 55%;
+  height: 100%;
+  padding: 2rem;
+}
+.page4-left .elements .elements-right .imgHover {
+  height: 25vh;
+  width: 60vh;
+  border: 1px solid #000;
+  overflow: hidden;
+  margin-top: -2rem;
+  overflow: hidden;
+}
+.page4-left .elements .elements-right img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  transition: all ease 0.5s;
+}
+.page4-left .elements .elements-right img:hover {
+  scale: 1.1;
+}
+.page4-left .elements .elements-right h5 {
+  font-family: EditorialNew;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  font-weight: 900;
+}
+.page4-left .elements .elements-right p {
+  font-family: EditorialNew;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 1rem;
+}
+.page4-left .img1 {
+  height: 95vh;
+  width: 130vh;
+  padding-top: 2rem;
+}
+
+.page4-right {
+  width: 35%;
+  padding-left: 2rem;
+  margin-top: 1rem;
+  color: #1D1D1B;
+}
+.page4-right h1 {
+  font-size: 6rem;
+  font-weight: 100;
+  line-height: 6rem;
+  font-family: Canopee;
+}
+.page4-right h1 span {
+  font-size: 13.5rem;
+  display: inline-block;
+  margin-top: 3rem;
+  font-weight: 100;
+  line-height: 6rem;
+  letter-spacing: -0.5rem;
+  font-family: Canopee;
+}
+.page4-right p {
+  font-size: 2rem;
+  line-height: 2.3rem;
+  font-family: EditorialNew;
+  margin-top: 2rem;
+}
+.page4-right .hoverEffect {
+  margin-top: 1.5rem;
+  width: 100%;
+  height: 11rem;
+  border: 1px solid;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+.page4-right .hoverEffect:hover img {
+  transform: translateX(78%);
+}
+.page4-right .hoverEffect:hover h1 {
+  transform: translateX(140%);
+}
+.page4-right .hoverEffect h1 {
+  font-size: 5rem;
+  font-family: Canopee;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-30%);
+  transition: all ease 0.6s;
+}
+.page4-right .hoverEffect img {
+  height: 8vh;
+  transform: translateX(-120%);
+  transition: all ease 0.6s;
 }/*# sourceMappingURL=style.css.map */
