@@ -322,19 +322,22 @@ body {
   font-family: Canopee;
 }
 .page4-left .elements .elements-left h3 {
-  font-size: 38px;
+  font-size: 2.5rem;
   font-weight: 300;
   line-height: 44px;
   font-family: EditorialNew;
   margin-top: 1rem;
 }
 .page4-left .elements .elements-left h5 {
-  font-family: 18px;
+  font-family: EditorialNew;
+  font-size: 1.2rem;
   font-weight: 300;
   line-height: 22px;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 .page4-left .elements .elements-left h5 span {
+  font-size: 1.3rem;
+  display: inline-block;
   font-family: Canopee;
 }
 .page4-left .elements .elements-right {
@@ -443,6 +446,99 @@ body {
 
 .page5 {
   width: 100%;
+  height: 70vh;
+  background-color: #C6BEB4;
+  color: #1C1C1A;
+  padding: 2rem;
+}
+.page5 .cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+  margin-left: 0.8rem;
+}
+.page5 .cards .card {
+  width: 36rem;
+  height: 22rem;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  background-color: #C6BFB5;
+}
+.page5 .cards .card p {
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 2.5rem;
+  font-family: EditorialNew;
+}
+.page5 .cards .card .profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 2rem;
+}
+.page5 .cards .card .profile img {
+  height: 8vh;
+  border-radius: 50%;
+}
+.page5 .cards .card .profile .desp {
+  color: #1B1B19;
+}
+.page5 .cards .card .profile .desp h1 {
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 2.1rem;
+  font-family: DomaineDispCond;
+}
+.page5 .cards .card .profile .desp h3 {
+  font-size: 1.5rem;
+  font-weight: 100;
+  line-height: 1.7rem;
+  font-family: EditorialNew;
+}
+.page5 .cards .card .content {
+  border: 1px solid #212120;
+  border-style: dashed;
+  border-radius: 0.5rem;
+  border-width: 0.1rem;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+}
+
+.card1 {
+  z-index: 995;
+  position: absolute;
+  right: 60%;
+  box-shadow: 5px 5px 10px #555, 5px 5px 10px #555;
+}
+
+.card2 {
+  z-index: 996;
+  position: absolute;
+  right: 40%;
+  box-shadow: 5px 5px 10px #555, 5px 5px 10px #555;
+}
+
+.card3 {
+  z-index: 997;
+  position: absolute;
+  right: 20%;
+  box-shadow: 5px 5px 10px #555, 5px 5px 10px #555;
+}
+
+.card4 {
+  z-index: 998;
+  margin-right: 5rem;
+  position: absolute;
+  right: -4%;
+  box-shadow: 5px 5px 10px #555, 5px 5px 10px #555;
+}
+
+.page6 {
+  width: 100%;
   padding: 25px 0;
   background-color: #C6BEB5;
   white-space: nowrap;
@@ -451,7 +547,7 @@ body {
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
 }
-.page5 h1 {
+.page6 h1 {
   font-size: 5rem;
   font-family: EditorialNew;
   font-weight: 100;
@@ -462,18 +558,18 @@ body {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
-.page5 h1 span {
+.page6 h1 span {
   font-family: Canopee;
   padding: 0 1rem;
   background-color: #1C1C19;
   color: #C2BBB2;
 }
-.page5::-webkit-scrollbar {
+.page6::-webkit-scrollbar {
   display: none;
 }
 
-.page6 {
-  height: 100px;
+.page7 {
+  height: 60px;
   width: 100%;
   background-color: #C3BCB2;
 }
@@ -486,6 +582,6 @@ body {
     transform: translateX(calc(-100% - 34px));
   }
 }
-.page5:hover h1 {
+.page6:hover h1 {
   animation-play-state: paused;
 }/*# sourceMappingURL=style.css.map */

@@ -273,6 +273,14 @@ body {
         font-size: 2rem;
         font-family: EditorialNew;
         margin-top: 2rem;
+
+        // &::first-letter {
+        //         font-family: Canopee;
+        //         background-color: #1B1B19;
+        //         color: #C6BFB5;
+        //         font-size: 3rem;
+        //         margin-right: 0.1rem;
+        //     }
     }
 }
 
@@ -363,7 +371,7 @@ body {
             }
             
             h3 {
-                font-size: 38px;
+                font-size: 2.5rem;
                 font-weight: 300;
                 line-height: 44px;
                 font-family: EditorialNew;
@@ -371,13 +379,16 @@ body {
             }
         
             h5 {
-                font-family: 18px;
+                font-family: EditorialNew;
+                font-size: 1.2rem;
                 font-weight: 300;
                 line-height: 22px;
-                margin-top: 2rem;
+                margin-top: 3rem;
             
                 span {
-                        font-family: Canopee;
+                    font-size: 1.3rem;
+                    display: inline-block;
+                    font-family: Canopee;
                 }
             }
         }
@@ -507,6 +518,120 @@ body {
 
 .page5 {
     width: 100%;
+    height: 70vh;
+    // background-color: red;
+    background-color: #C6BEB4;
+    color: #1C1C1A;
+    padding: 2rem;
+
+    .cards {
+        width: 100%;
+        display: flex;
+        // gap: 2rem;
+        flex-wrap: nowrap;
+        position: relative;
+        margin-left: 0.8rem;
+
+        .card {
+            width: 36rem;
+            height: 22rem;
+            padding: 1rem;
+            // border: 2px solid #000;
+            border-radius: 0.8rem;
+            background-color: #C6BFB5;
+
+            p {
+                font-size: 2rem;
+                font-weight: 100;
+                line-height: 2.5rem;
+                font-family: EditorialNew;
+            }
+
+            .profile {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                position: absolute;
+                bottom: 0;
+                padding-bottom: 2rem;
+
+                img {
+                    height: 8vh;
+                    border-radius: 50%;
+                }
+
+                .desp {
+                    color: #1B1B19;
+
+                    h1 {
+                        font-size: 2rem;
+                        font-weight: 100;
+                        line-height: 2.1rem;
+                        font-family: DomaineDispCond;
+                    }
+
+                    h3 {
+                        font-size: 1.5rem;
+                        font-weight: 100;
+                        line-height: 1.7rem;
+                        font-family: EditorialNew;
+                    }
+                }
+            }
+
+            .content {
+                border: 1px solid #212120;
+                border-style: dashed;
+                border-radius: 0.5rem;
+                border-width: 0.1rem;
+                height: 100%;
+                width: 100%;
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+.card1 {
+    z-index: 995;
+    // background-color: blueviolet;
+    position: absolute;
+    // top: 50%;
+    right: 60%;
+    box-shadow: 5px 5px 10px #555, 5px 5px 10px #555;
+}
+
+.card2 {
+    z-index: 996;
+    // background-color: red;
+    position: absolute;
+    // top: 40%;
+    right: 40%;
+    box-shadow: 5px 5px 10px #555, 5px 5px 10px #555;
+}
+
+.card3 {
+    z-index: 997;
+    // background-color: blue;
+    position: absolute;
+    // top: 30%;
+    right: 20%;
+    box-shadow: 5px 5px 10px #555, 5px 5px 10px #555;
+}
+
+.card4 {
+    z-index: 998;
+    // background-color: orange;
+    margin-right: 5rem;
+    position: absolute;
+    // top: 10%;
+    right: -4%;
+    // right: -5.7%;
+    box-shadow: 5px 5px 10px #555, 5px 5px 10px #555;
+}
+
+.page6 {
+    width: 100%;
     padding: 25px 0;
     background-color: #C6BEB5;
     white-space: nowrap;
@@ -540,8 +665,8 @@ body {
     }
 }
 
-.page6 {
-    height: 100px;
+.page7 {
+    height: 60px;
     width: 100%;
     background-color: #C3BCB2;
 }
@@ -556,6 +681,6 @@ body {
     }
 }
 
-.page5:hover h1 {
+.page6:hover h1 {
     animation-play-state: paused;
 }
